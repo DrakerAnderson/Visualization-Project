@@ -2,7 +2,7 @@
 
 Data Visualization Project
 
-The data we propose to visualize for this project is to use the NFL website to query data from the last 50 years to analyze the impact of major rule changes on kick returns, unnecessary roughness, and special teams have on the season of the NFL teams. We predict that 
+The data we propose to visualize for this project is to use the NFL website to query data from the last 50 years to analyze the impact of major rule changes on kick returns, unnecessary roughness, and special teams have had on the NFL teams.
 
 We will use Python to scrape the NFL website to create CSV files to store all of our data and SQL to house our data,
 We will use an altervative library called NFL Data Scraper to import data
