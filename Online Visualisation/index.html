@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dropdown Events</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript">
+    </script>
+</head>
+<body>
+    <h2>Kickoff Returns By Season</h2>
+    <p>Hovering over each bar shows the counts for those seasons. </p>
+    <select id= "selDataset">
+        <option value="Yards">Yards</option>
+        <option value="Touchdowns">Touchdowns</option>
+        <option value="Returns">Returns</option>
+    </select>
+
+    <div id="bar"></div>
+
+    <p>Data Sources:<br />
+        <ul>
+            <li>
+                <a href="https://www.nfl.com/stats/team-stats/"">Link to NFL stats page where data was scraped.</a>
+            </li>
+            <li>
+                <a href="https://github.com/MarcLinderGit/NFL_Stats">Link to Mark Linders github(creater of nfl_scraper) scraping library used to acquire data</a>
+            </li>
+            </ul>
+    </p>
+    <script src="data.js"></script>
+    <script src="plots.js"></script>
+</body>
+</html>
