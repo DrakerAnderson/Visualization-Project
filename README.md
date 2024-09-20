@@ -1,30 +1,31 @@
-Project 3 Data Visualization
+# Header Project 3 Data Visualization
 
 CONTENTS:
+1. Outputs Folder: Consists of 4 (four) CSV files created: kickoff_returns_merged.csv, kickoff_returns_cleaned.csv, seasonal_stats_summary.csv
+2. Resources Folder: Consists of the original starter code from "https://www.nfl.com"
+3. original_merge.ipynb, stats by season.ipynb, kickoff_data_cleaned.ipynb  : Jupiter notebooks used to clean the data and produce csv files for import.
+4. Kickoff_Returns_data.sql: copy of the schema file converted into a format that can be imported into quickdbd app.
 
-Outputs Folder: Consists of 4 (four) CSV files created: kickoff_returns_merged.csv, kickoff_returns_cleaned.csv, seasonal_stats_summary.csv
-Resources Folder: Consists of the original starter code from "https://www.nfl.com"
-original_merge.ipynb, stats by season.ipynb, kickoff_data_cleaned.ipynb  : Jupiter notebooks used to clean the data and produce csv files for import.
-Kickoff_Returns_data.sql: copy of the schema file converted into a format that can be imported into quickdbd app.
 Chris and Draker work together to analyze important rule changes in the NFL that altered special teams stats during kickoffs
 
 Project Requirements
-This project meets the following technical specifications:
-Visualizations: Created with Python (e.g. Matplotlib, Pandas plotting, seaborn)
-Database: Data stored in and extracted from a PostgreSQL database.
-New Library: Includes the use of seaborn, a Python library not covered in class.
-Dataset: Powered by a dataset with over 100 records, featuring NFL team statistics from 1970 to 2022
-User Interaction: Includes user-driven interaction, such as HTML menus and dropdowns to display JavaScript-powered visualizations.
+  -This project meets the following technical specifications:
+  -Visualizations: Created with Python (e.g. Matplotlib, Pandas plotting, seaborn)
+  -Database: Data stored in and extracted from a PostgreSQL database.
+  -New Library: Includes the use of seaborn, a Python library not covered in class.
+  -Dataset: Powered by a dataset with over 100 records, featuring NFL team statistics from 1970 to 2022
+  -User Interaction: Includes user-driven interaction, such as HTML menus and dropdowns to display JavaScript-powered visualizations.
 
-Dataset Description
-The dataset used in this project includes NFL kickoff return data from 1990 to 2020, with a focus on the following rule changes:
-
-1994: Kickoff line moved from the 35-yard line to the 30-yard line
-2011: Kickoff line moved from the 30-yard line to the 35-yard line
+Dataset Description:
+The dataset used in this project includes NFL kickoff return data from 1990 to 2020, with a focus on the following rule changes and events:
+  - 1974: Kickoff line moved to the 30-yard line
+  - 1984: players strike leading to less teams playing and shortened schedules
+  - 1994: Kickoff line moved from the 35-yard line to the 30-yard line
+  - 2011: Kickoff line moved from the 30-yard line to the 35-yard line
 
 The dataset includes the following metrics:
-Return yards
-Touchdowns
+  - Return yards
+  - Touchdowns
 
 Visualizations
 The project includes a range of interactive visualizations, including:
@@ -35,7 +36,7 @@ Interactive online bar charts showing amount of Returns, Touchdowns, and Yards g
 Technical Details
 Backend: Built using NFL_Scaper, with API routes serving back Python-created plots.
 Frontend: Built using HTML, Python, and JavaScript, with user-driven interaction enabled through dropdowns and menus.
-Dependencies: Python 3.0 or better, with an environment containing Pandas, matplot.lib, pathlib, glob, os and datetime dependencies.
+Dependencies: Python 3.0 or better, with an environment containing Pandas, seaborn, matplot.lib, pathlib, glob, os and datetime dependencies.
 
 DATA SOURCES: NFLDatascraper used to scrape NFL website
 
@@ -56,3 +57,7 @@ What are the rules changes that affected special teams during kickoffs?
 Look for shifting trends in 1974 and 2011 to see if major rule changes affected kick returns
   - the most significant change was after 2011 when they reimplemented the ball being kicked from the 35
   - kickers are becoming more athletic and there are a lot more touchbacks now compared to 1974 when that rule was first implemented
+
+Ethical consiederations
+  - is the nfl website an approved website to scrape?
+the nfl website is okay to scrape as long as data is used for personal or research purposes. It cannot be used commercially.
