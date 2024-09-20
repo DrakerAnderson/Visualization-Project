@@ -1,24 +1,57 @@
-# Visualization-Project
+Project 3 Data Visualization
+CONTENTS:
 
-Data Visualization Project
+Outputs Folder: Consists of 4 (four) CSV files created: kickoff_returns_merged.csv, kickoff_returns_cleaned.csv, seasonal_stats_summary.csv
+Resources Folder: Consists of the original starter code from "https://www.nfl.com"
+original_merge.ipynb, stats by season.ipynb, kickoff_data_cleaned.ipynb  : Jupiter notebooks used to clean the data and produce csv files for import.
+Kickoff_Returns_data.sql: copy of the schema file converted into a format that can be imported into quickdbd app.
+Chris and Draker work together to analyze important rule changes in the NFL that altered special teams stats during kickoffs
 
-The data we propose to visualize for this project is to use the NFL website to query data from the last 50 years to analyze the impact of major rule changes on kick returns, unnecessary roughness, and special teams have had on the NFL teams.
+Project Requirements
+This project meets the following technical specifications:
+Visualizations: Created with Python (e.g. Matplotlib, Pandas plotting, seaborn)
+Database: Data stored in and extracted from a PostgreSQL database.
+New Library: Includes the use of seaborn, a Python library not covered in class.
+Dataset: Powered by a dataset with over 100 records, featuring NFL team statistics from 1970 to 2022
+User Interaction: Includes user-driven interaction, such as HTML menus and dropdowns to display JavaScript-powered visualizations.
 
-We will use Python to scrape the NFL website to create CSV files to store all of our data and SQL to house our data,
-We will use an altervative library called NFL Data Scraper to import data
+Dataset Description
+The dataset used in this project includes NFL kickoff return data from 1990 to 2020, with a focus on the following rule changes:
 
-Questions & Tasks
-The following tasks and questions will drive the visualization and interaction decisions for this project:
+1994: Kickoff line moved from the 35-yard line to the 30-yard line
+2011: Kickoff line moved from the 30-yard line to the 35-yard line
 
-How does the frequency of kick returns vary over time do to rules changed in 1974, 2011?
-Is there any correlation between successful returns and these rule changes?
-Does the inclusion of unnecessary roughness affect the longevity of a quarterbacks career?
-How does the 1974 rule changing location of the goal post affect succesful fg attempts?
-What is the impact of special teams on win loss records?
+The dataset includes the following metrics:
+Return yards
+Touchdowns
 
-Visualizations planning on creating
-Chart showing year of special teams rule changes and successful kick returns
-Map of cities that have had NFL teams with layers of team stats by season
-Planned HTML site using java to direct users to answer our questions
+Visualizations
+The project includes a range of interactive visualizations, including:
+Line charts showing the trend of return yards over time
+Bar charts showing touchdowns by team and overall touchdowns by the NFL
+Interactive online bar charts showing amount of Returns, Touchdowns, and Yards gained
 
+Technical Details
+Backend: Built using NFL_Scaper, with API routes serving back Python-created plots.
+Frontend: Built using HTML, Python, and JavaScript, with user-driven interaction enabled through dropdowns and menus.
+Dependencies: Python 3.0 or better, with an environment containing Pandas, matplot.lib, pathlib, glob, os and datetime dependencies.
 
+DATA SOURCES: NFLDatascraper used to scrape NFL website
+
+ANALYSIS:
+
+what is the variations of kick returns yards from 1970 thru 2022?
+  -Signifigant changes during the 1982, 1994, and 2012 seasons
+  -in 1982 there was a players strike leading to only 25 of the 32 teams playing  their seasons
+  - in 94-95 there was a huge increase in kick return yards
+  - after 2011 the kick return yardage decreases significantly over the next several years
+  
+
+What are the rules changes that affected special teams during kickoffs?
+  - in 1974 they moved the kickoffs from the 40 yard line to the 35 yard line
+  - in 94 they moved the kickoff line to the 30 yard line
+  - in 2011 they moved the ball back to the 35 yard line and moved the players 5 yards away from the line to prevent a running start
+
+Look for shifting trends in 1974 and 2011 to see if major rule changes affected kick returns
+  - the most significant change was after 2011 when they reimplemented the ball being kicked from the 35
+  - kickers are becoming more athletic and there are a lot more touchbacks now compared to 1974 when that rule was first implemented
