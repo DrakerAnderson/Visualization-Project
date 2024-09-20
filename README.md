@@ -1,4 +1,5 @@
 Project 3 Data Visualization
+
 CONTENTS:
 
 Outputs Folder: Consists of 4 (four) CSV files created: kickoff_returns_merged.csv, kickoff_returns_cleaned.csv, seasonal_stats_summary.csv
