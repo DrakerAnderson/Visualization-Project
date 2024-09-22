@@ -61,7 +61,7 @@ The dataset used in this project includes NFL kickoff return data from 1990 to 2
   - the most significant change was after 2011 when they reimplemented the ball being kicked from the 35
   - kickers are becoming more athletic and there are a lot more touchbacks now compared to 1974 when that rule was first implemented
 
-# Ethical consiederations
+# Ethical considerations
   - is the nfl website an approved website to scrape?
 
 the nfl website is okay to scrape as long as data is used for personal or research purposes. It cannot be used commercially.
